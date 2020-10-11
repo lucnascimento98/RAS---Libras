@@ -47,3 +47,6 @@ while True:
     detectAndDisplay(frame)
     if cv.waitKey(10) == 27:
         break
+
+
+print("finalizou")
