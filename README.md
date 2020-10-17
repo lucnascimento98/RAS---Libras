@@ -1,5 +1,11 @@
 # RAS-Libras
-Bibliotecas usadas:
-numpy
-openCV
-pickle
+## Bibliotecas usadas:
+
+Instalação do Tensorflow
+```
+pip install tensorflow
+```
+Instalação do Numpy
+```
+pip install numpy
+```
