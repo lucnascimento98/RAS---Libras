@@ -20,4 +20,3 @@ Instalação OpenCV
 ```
 pip install opencv-python 4.4.0.44
 ```
-## O que é a RAS?
