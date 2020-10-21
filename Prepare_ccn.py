@@ -37,10 +37,10 @@ X = np.array(X).reshape(-1, IMG_SIZE, IMG_SIZE, 1) # -1: Quantas features tem, I
 
 import pickle # Salvar os arquivos criados 
 
-pickle_out = open("X.pickle","wb") # Salvar X
+pickle_out = open("output\\X.pickle","wb") # Salvar X
 pickle.dump(X,pickle_out)
 pickle_out.close()
 
-pickle_out = open("y.pickle","wb") # Salvar y
+pickle_out = open("output\\y.pickle","wb") # Salvar y
 pickle.dump(y,pickle_out)
 pickle_out.close()

@@ -11,10 +11,10 @@ NAME = 'Verificação_de_letras-cnn-64x2-{}'.format(int(time.time()))
 
 tensorboard = TensorBoard(log_dir = 'logs/{}'.format(NAME)) # Para ter uma visualização do treinamento da rede neural
 
-pickle_in = open("X.pickle","rb")
+pickle_in = open("output\\X.pickle","rb")
 X = np.array(pickle.load(pickle_in))
 
-pickle_in = open("y.pickle","rb")
+pickle_in = open("output\\y.pickle","rb")
 y = np.array(pickle.load(pickle_in))
 
 X = np.array(X/255.0) #Simplificando coloração de Pixels para valores entre 0 e 1
