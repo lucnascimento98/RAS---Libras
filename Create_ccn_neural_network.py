@@ -10,7 +10,8 @@ from tensorflow.keras.callbacks import TensorBoard # Para visualização do Mode
 import time
 
 DATADIR = "dataset\\training" #Onde estão sendo armazenados os arquivos
-CATEGORIES = ["A","B","C","D","E","F","G","I","L","M","N","O","P","Q","R","T","U","V","W","Y"] #Possibilidades de estudo
+# CATEGORIES = ["A","B","C","D","E","F","G","I","L","M","N","O","P","Q","R","T","U","V","W","Y"] #Possibilidades de estudo
+CATEGORIES = ["A","B","C"] #Possibilidades de estudo
 
 training_data = []
 IMG_SIZE = 64
@@ -69,7 +70,7 @@ model = Sequential([Conv2D(64,(2,2), activation='relu', input_shape = X.shape[1:
 
                     Dense(512, activation='relu'), # Quinta camada
 
-                    Dense(22, activation='softmax')]) # Camada de Saída #APRESENTA PROBLEMAS NA SAÍDA
+                    Dense(1, activation='softmax')]) # Camada de Saída #APRESENTA PROBLEMAS NA SAÍDA
 
 # model.summary()
 adam = tf.keras.optimizers.Adam(learning_rate=0.001)
