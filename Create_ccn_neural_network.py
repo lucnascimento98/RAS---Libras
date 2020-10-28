@@ -77,4 +77,4 @@ adam = tf.keras.optimizers.Adam(learning_rate=0.001)
 model.compile(optimizer= adam, loss='categorical_crossentropy', metrics=['acc'])
 model.fit(X, y, batch_size=32, epochs=1, validation_split=0.1, callbacks = [tensorboard])
 
-model.save('RAS---Libras\output\treinando_rede_all.model') # Salvando Rede Neural
+model.save('RAS---Libras\\output\\treinando_rede_all.model') # Salvando Rede Neural
