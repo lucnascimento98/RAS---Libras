@@ -14,7 +14,7 @@ while(cap.isOpened()):
 
         cv2.imshow('frame',frame)
         key = cv2.waitKey(1)
-        if key == 27:
+        if key == 27: #Tecla ESC
             break
     else:
         break
