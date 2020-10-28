@@ -9,7 +9,7 @@ from tensorflow.keras.callbacks import TensorBoard # Para visualização do Mode
 
 import time
 
-DATADIR = "dataset\\training" #Onde estão sendo armazenados os arquivos
+DATADIR = "RAS---Libras\\dataset\\training" #Onde estão sendo armazenados os arquivos
 # CATEGORIES = ["A","B","C","D","E","F","G","I","L","M","N","O","P","Q","R","T","U","V","W","Y"] #Possibilidades de estudo
 CATEGORIES = ["A","B","C"] #Possibilidades de estudo
 
@@ -77,4 +77,4 @@ adam = tf.keras.optimizers.Adam(learning_rate=0.001)
 model.compile(optimizer= adam, loss='categorical_crossentropy', metrics=['acc'])
 model.fit(X, y, batch_size=32, epochs=1, validation_split=0.1, callbacks = [tensorboard])
 
-model.save('output\\treinando_rede_all.model') # Salvando Rede Neural
+model.save('RAS---Libras\output\treinando_rede_all.model') # Salvando Rede Neural
