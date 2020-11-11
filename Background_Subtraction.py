@@ -41,7 +41,7 @@ while True:
     ## [display_frame_number]
 
     ## [show]
-    #show the current frame and the fg masks
+    # show the current frame and the fg masks
     cv2.imshow('Frame', frame)
     cv2.imshow('FG Mask', fgMask)
     ## [show]
