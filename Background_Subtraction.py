@@ -17,7 +17,7 @@ else:
 ## [create]
 
 ## [capture]
-capture = cv2.VideoCapture(cv2.samples.findFileOrKeep(args))
+capture = cv2.VideoCapture(0)
 if not capture.isOpened:
     print('Unable to open: ' + args)
     exit(0)
