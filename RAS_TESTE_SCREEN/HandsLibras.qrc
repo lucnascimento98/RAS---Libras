@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="HandsImage">
+    <file>HandsLibras.png</file>
+  </qresource>
+</RCC>
