@@ -496,7 +496,7 @@
 color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>Treinar</string>
+     <string>Aprender</string>
     </property>
    </widget>
    <widget class="QPushButton" name="config_button">
@@ -518,7 +518,7 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>Configurações</string>
+     <string>Informações</string>
     </property>
    </widget>
    <widget class="QPushButton" name="exit_button">
@@ -1231,7 +1231,7 @@ color: rgb(255, 255, 255);</string>
      <cursorShape>ArrowCursor</cursorShape>
     </property>
     <property name="text">
-     <string>LIBRAStudy</string>
+     <string>LIBRAS</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -1272,7 +1272,7 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>Aprender</string>
+     <string>Testar</string>
     </property>
    </widget>
   </widget>
