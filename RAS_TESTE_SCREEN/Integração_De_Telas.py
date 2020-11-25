@@ -1,7 +1,7 @@
 import sys
 from PyQt5.QtWidgets import QMainWindow,QApplication
 from interface import *
-from interface_2 import *
+from interface2 import *
 
 class janela2(QMainWindow):
     def __init__ (self):
