@@ -455,13 +455,11 @@ class Ui_MainWindow(object):
         self.window_title.setText(_translate("MainWindow", "LIBRAS"))
         self.start_button_2.setText(_translate("MainWindow", "Testar"))
 
-<<<<<<< HEAD:RAS_TESTE_SCREEN/Menu.py
-=======
+
     def exit_click(self): # Comando do botão
         sys.exit()
 
 
->>>>>>> 0b365666f56e98f03f66865d6429bb4385046864:RAS_TESTE_SCREEN/interface.py
 import HandsLibras
 
 if __name__ == "__main__":
