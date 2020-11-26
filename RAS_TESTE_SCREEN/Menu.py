@@ -453,7 +453,7 @@ class Ui_MainWindow(object):
         self.window_title.setText(_translate("MainWindow", "LIBRAS"))
         self.start_button_2.setText(_translate("MainWindow", "Testar"))
 
-import HandsLibras_rc
+import HandsLibras
 
 if __name__ == "__main__":
     import sys
