@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="LetraA">
+    <file>../../RAS_TESTE_SCREEN/Letras_images/A.png</file>
+  </qresource>
+</RCC>

@@ -4,6 +4,7 @@ from Menu import *
 from Aprender import *
 from Testar import *
 
+
 class Aprender(QMainWindow):
     def __init__ (self):
         super() .__init__()

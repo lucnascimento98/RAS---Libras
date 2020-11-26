@@ -7,6 +7,7 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+import sys
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -450,9 +451,17 @@ class Ui_MainWindow(object):
         self.start_button.setText(_translate("MainWindow", "Aprender"))
         self.config_button.setText(_translate("MainWindow", "Informações"))
         self.exit_button.setText(_translate("MainWindow", "Sair"))
+        self.exit_button.clicked.connect(self.exit_click)
         self.window_title.setText(_translate("MainWindow", "LIBRAS"))
         self.start_button_2.setText(_translate("MainWindow", "Testar"))
 
+<<<<<<< HEAD:RAS_TESTE_SCREEN/Menu.py
+=======
+    def exit_click(self): # Comando do botão
+        sys.exit()
+
+
+>>>>>>> 0b365666f56e98f03f66865d6429bb4385046864:RAS_TESTE_SCREEN/interface.py
 import HandsLibras
 
 if __name__ == "__main__":
