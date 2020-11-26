@@ -3,6 +3,7 @@ from PyQt5.QtWidgets import QMainWindow,QApplication
 from Menu import *
 from Aprender import *
 from Testar import *
+from Informações import *
 
 
 class Aprender(QMainWindow):
@@ -31,6 +32,19 @@ class Testar(QMainWindow):
         self.close()
 
 
+class Informacoes(QMainWindow):
+    def __init__ (self):
+        super() .__init__()
+        self.ui = Ui_Informacoes()
+        self.ui.setupUi(self)
+        self.ui.config_button.clicked.connect(self.voltaJanela)
+
+    def voltaJanela(self):
+        self.origem = Menu()
+        self.origem.show()
+        self.close()
+
+
 class Menu(QMainWindow):
     def __init__ (self):
         super() .__init__()
@@ -40,6 +54,8 @@ class Menu(QMainWindow):
         self.ui.start_button.clicked.connect(self.mudaJanela)
         self.Testar = Testar()
         self.ui.start_button_2.clicked.connect(self.mudaJanela2)
+        self.Informacoes = Informacoes()
+        self.ui.config_button.clicked.connect(self.mudaJanela3)
 
 
     def mudaJanela(self):
@@ -48,6 +64,10 @@ class Menu(QMainWindow):
 
     def mudaJanela2(self):
         self.Testar.show()
+        self.hide()
+
+    def mudaJanela3(self):
+        self.Informacoes.show()
         self.hide()
 
 
