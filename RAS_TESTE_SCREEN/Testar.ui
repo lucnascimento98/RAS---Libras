@@ -160,15 +160,6 @@
        </color>
       </brush>
      </colorrole>
-     <colorrole role="PlaceholderText">
-      <brush brushstyle="SolidPattern">
-       <color alpha="128">
-        <red>0</red>
-        <green>0</green>
-        <blue>0</blue>
-       </color>
-      </brush>
-     </colorrole>
     </active>
     <inactive>
      <colorrole role="WindowText">
@@ -300,15 +291,6 @@
      <colorrole role="ToolTipText">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>0</red>
-        <green>0</green>
-        <blue>0</blue>
-       </color>
-      </brush>
-     </colorrole>
-     <colorrole role="PlaceholderText">
-      <brush brushstyle="SolidPattern">
-       <color alpha="128">
         <red>0</red>
         <green>0</green>
         <blue>0</blue>
@@ -452,15 +434,6 @@
        </color>
       </brush>
      </colorrole>
-     <colorrole role="PlaceholderText">
-      <brush brushstyle="SolidPattern">
-       <color alpha="128">
-        <red>0</red>
-        <green>0</green>
-        <blue>0</blue>
-       </color>
-      </brush>
-     </colorrole>
     </disabled>
    </palette>
   </property>
@@ -499,6 +472,9 @@ color: rgb(255, 255, 255);</string>
       <height>431</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/Letra B/B.png);</string>
+    </property>
     <property name="frameShape">
      <enum>QFrame::WinPanel</enum>
     </property>
@@ -534,6 +510,46 @@ color: rgb(255, 255, 255);</string>
      <string>LETRA/FOTO</string>
     </property>
    </widget>
+   <widget class="QComboBox" name="Lista">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>110</y>
+      <width>221</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Letra A</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Letra B</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Letra C</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Letra D</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Letra E</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Letra F</string>
+     </property>
+    </item>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -541,12 +557,47 @@ color: rgb(255, 255, 255);</string>
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>20</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
- <connections/>
+ <resources>
+  <include location="Letras_images/Letras.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>Lista</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>label_4</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>137</x>
+     <y>143</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>142</x>
+     <y>393</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Lista</sender>
+   <signal>editTextChanged(QString)</signal>
+   <receiver>label_3</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>183</x>
+     <y>148</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>318</x>
+     <y>272</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

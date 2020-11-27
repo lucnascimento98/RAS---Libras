@@ -1,4 +1,4 @@
-from PyQt5 import QtGui
+from PyQt5 import QtGui, QtWidgets
 from PyQt5.QtWidgets import QWidget, QApplication, QLabel, QVBoxLayout
 from PyQt5.QtGui import QPixmap
 import sys

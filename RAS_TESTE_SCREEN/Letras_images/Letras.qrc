@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="Letra A">
+    <file>A.png</file>
+  </qresource>
+  <qresource prefix="Letra B">
+    <file>B.png</file>
+  </qresource>
+</RCC>
