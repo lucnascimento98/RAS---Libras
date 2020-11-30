@@ -174,7 +174,7 @@ class Ui_Testar(object):
         self.start_button_2.setObjectName("start_button_2")
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
         self.label_3.setGeometry(QtCore.QRect(290, 100, 481, 431))
-        self.label_3.setStyleSheet("image: url(:/Letra {}/{}.png);".format(CATEGORIES[dicio[self.Lista.currentText()]],CATEGORIES[dicio[self.Lista.currentText()]]))
+        self.label_3.setStyleSheet("image: url(:/Letra A/A.png);")
         self.label_3.setFrameShape(QtWidgets.QFrame.WinPanel)
         self.label_3.setFrameShadow(QtWidgets.QFrame.Plain)
         self.label_3.setLineWidth(4)
