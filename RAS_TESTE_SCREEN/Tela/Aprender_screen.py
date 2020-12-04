@@ -30,7 +30,7 @@ class window(QMainWindow):
         self.left = 100
         self.width = 800
         self.height = 600
-        self.name = "Praticar"
+        self.name = "Aprender"
 
         self.setMinimumSize(QtCore.QSize(800, 600))
         self.setMaximumSize(QtCore.QSize(800, 600))
