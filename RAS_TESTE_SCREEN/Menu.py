@@ -389,7 +389,7 @@ class Ui_MainWindow(object):
         brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
         brush.setStyle(QtCore.Qt.SolidPattern)
         palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.ToolTipText, brush)
-        self.window_title.setPalette(palette)
+        self.window_title.te)setPalette(palet
         font = QtGui.QFont()
         font.setPointSize(35)
         font.setBold(True)
