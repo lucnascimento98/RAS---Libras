@@ -200,14 +200,6 @@ class Ui_Testar(object):
         self.Lista.currentTextChanged['QString'].connect(self.label_3.setText)
         QtCore.QMetaObject.connectSlotsByName(Testar)
 
-
-        self.Lista.currentIndexChanged.connect(self.comboChanged)
-
-    def comboChanged(self):
-        self.updateComboData()
-        self.update()
-
-
     def retranslateUi(self, Testar):
         _translate = QtCore.QCoreApplication.translate
         Testar.setWindowTitle(_translate("Testar", "MainWindow"))
